@@ -57,7 +57,6 @@
 
         tap-ms = <100>;
     };
-
     macros {
         btsel: bluetooth_select {
             compatible = "zmk,behavior-macro-one-param";
