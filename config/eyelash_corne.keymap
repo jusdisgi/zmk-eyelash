@@ -57,6 +57,43 @@
 
         tap-ms = <100>;
     };
+    macros {
+        btsel: bluetooth_select {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings
+                = <&macro_param_1to2>
+                , <&macro_tap &bt BT_SEL MACRO_PLACEHOLDER>
+                , <&macro_tap &out OUT_BLE>
+                ;
+        };
+        btdis: bluetooth_disconnect {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings
+                = <&macro_param_1to2>
+                , <&macro_tap &bt BT_DISC MACRO_PLACEHOLDER>
+                ;
+        };
+        swdeskl: swap_desktop_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD>
+                , <&macro_tap &kp LEFT>
+                , <&macro_release &kp LCMD>
+                ;
+        };
+        swdeskr: swap_desktop_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD>
+                , <&macro_tap &kp RIGHT>
+                , <&macro_release &kp LCMD>
+                ;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
