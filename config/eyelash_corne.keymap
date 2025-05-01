@@ -94,7 +94,7 @@
                 ;
         };
     };
-LCTRL
+
     keymap {
         compatible = "zmk,keymap";
 
