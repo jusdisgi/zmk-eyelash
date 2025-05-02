@@ -51,11 +51,17 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
-        tdlay: tdlay {
+        tdshlay0: tdshlay0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&to 0>;
+        };
+        tdeqlay0: tdeqlay0 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&to 0>;
         };
     };
 
@@ -121,6 +127,29 @@
                 ;
         };
     };
+    combos {
+        compatible = "zmk,combos";
+        combo_kapp {
+            timeout-ms = <30>;
+            key-positions = <1 2>;
+            bindings = <&kp K_APP>;
+        };
+        combo_numlock {
+            timeout-ms = <30>;
+            key-positions = <23 25>;
+            bindings = <&to 1>;
+        };
+        combo_navlock {
+            timeout-ms = <30>;
+            key-positions = <36 38>;
+            bindings = <&to 2>;
+        };
+        combo_mouselock {
+            timeout-ms = <30>;
+            key-positions = <37 39>;
+            bindings = <&to 3>;
+        };
+    };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -149,7 +178,6 @@
         //                                 │  ALT     │KELTICKNOT│ SPACE    |                                          │  ENTER   │  DELETE  │KELTICKNOT│ 
                                             &kp LALT  &kp LGUI  &kp SPACE                                               &lt 3 ENTER   &kp DEL   &kp RGUI
             >;
-
             sensor-bindings = <&deskswap_encoder>;
         };
 
@@ -163,13 +191,12 @@
         //│  ESC     │          │  {       │  }       │  [       │  ]       |           |NUB LEFT|NUB CLICK |NUB RIGHT|│  / ?     │  4 $     │  5 %     │  6 ^     │  - _     │  ' "     |
             &kp ESC    &none      &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT              &kp LEFT &kp ENTER  &kp RIGHT   &kp FSLH   &kp N4     &kp N5     &kp N6    &kp MINUS   &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤╭─────────╮         ╭─────────╮           ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
-        //│SHFT+CAPWD│          │          │ SHIFT    │THIS LAYER│          || ROLLER  |         |NUB DOWN |           │  \ |     │  1 !     │  2 @     │  3 #     │  +       │  = +     |
-            &tdcap     &none      &none     &kp LSHIFT  &none      &none      &kp C_MUTE          &kp DOWN               &kp BSLH   &kp N1     &kp N2     &kp N3     &kp PLUS   &kp EQUAL
+        //│ SHIFT+L0 │          │          │ SHIFT    │THIS LAYER│          || ROLLER  |         |NUB DOWN |           │  \ |     │  1 !     │  2 @     │  3 #     │  +       │  = +     |
+           &tdshlay0   &none      &none     &kp LSHIFT  &none      &none      &kp C_MUTE          &kp DOWN               &kp BSLH   &kp N1     &kp N2     &kp N3     &kp PLUS   &tdeqlay0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                                          ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //                                 │  ALT     │KELTICKNOT│ SPACE    |                                          │  ENTER   │  0       │  DOT      │ 
                                              &kp LALT  &kp LGUI  &kp SPACE                                             &lt 3 ENTER  &kp N0   &kp DOT
             >;
-
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
@@ -184,12 +211,11 @@
             &kp ESC    &none      &none      &none      &none      &none                 &kp LEFT &kp ENTER  &kp RIGHT  &kp PG_DN   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN  &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤╭─────────╮         ╭─────────╮           ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //│ SHIFT+L0 │FUN LAYER │          │          │          │          || ROLLER  |         |NUB DOWN |           │  ALT     │  INSERT  │  DOWN    │  HOME    │          │ SHIFT+L0 |
-            &tdlay     &mo 4      &none      &none      &none      &none      &kp C_BRI_AUTO      &kp DOWN               &kp RALT   &kp INS    &kp DOWN   &kp HOME   &none      &tdlay
+           &tdshlay0   &mo 4      &none      &none      &none      &none      &kp C_BRI_AUTO      &kp DOWN               &kp RALT   &kp INS    &kp DOWN   &kp HOME   &none      &tdshlay0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                                          ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //                                 │  {       │  [       │ (        |                                          │  )       │  ]       │  }       │ 
                                              &kp LBRC  &kp LBKT   &kp LPAR                                              &kp RPAR    &kp RBKT   &kp RBRC
             >;
-
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
@@ -204,7 +230,7 @@
             &kp ESC    &none      &none      &none     &kp LSHIFT  &none                 &kp LEFT &kp ENTER  &kp RIGHT  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &kp RGUI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤╭─────────╮         ╭─────────╮           ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤───────────────┤
         //│ SHIFT+L0 │FUN LAYER │          │          │          │          || ROLLER  |         |NUB DOWN |           │    CONTROL    │KNOT FKA PRINCE│  Shift        │  Alt          │  FUN LAYER    │ SHIFT + L0
-            &tdlay     &mo 4      &none      &none     &kp LALT    &none      &mkp MCLK           &kp DOWN               &kp RCTRL         &kp RGUI       &kp RSHFT       &kp RALT          &mo 4        &tdlay
+            &tdshlay0     &mo 4      &none      &none     &kp LALT    &none      &mkp MCLK           &kp DOWN               &kp RCTRL         &kp RGUI       &kp RSHFT       &kp RALT          &mo 4        &tdshlay0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                                          ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤───────────────┤
         //                                 │ MOUSE 4  │ MOUSE 5  │ ENTER    |                                          │ MOUSE 1       │ MOUSE 3       │ MOUSE 2       │ 
                                             &mkp MB4   &mkp MB5   &kp ENTER                                             &mkp LCLK       &mkp MCLK       &kp RCLK
