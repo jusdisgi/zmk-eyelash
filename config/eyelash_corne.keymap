@@ -149,25 +149,25 @@
         combo_navlock_on {
             timeout-ms = <30>;
             key-positions = <36 38>;
-            layers = <0>
+            layers = <0>;
             bindings = <&to 2>;
         };
         combo_navlock_off {
             timeout-ms = <30>;
             key-positions = <36 38>;
-            layers = <2>
+            layers = <2>;
             bindings = <&to 0>;
         };
         combo_mouselock_on {
             timeout-ms = <30>;
             key-positions = <37 39>;
-            layers = <0>
+            layers = <0>;
             bindings = <&to 3>;
         };
         combo_mouselock_off {
             timeout-ms = <30>;
             key-positions = <37 39>;
-            layers = <3>
+            layers = <3>;
             bindings = <&to 0>;
         };
     };
