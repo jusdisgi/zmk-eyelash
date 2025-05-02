@@ -78,7 +78,7 @@ layers:
   - {t: '6', s: ^}
   - {t: '-', s: _}
   - {t: '''', s: '"'}
-  - '&tdcap'
+  - '&tdshlay0'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
@@ -91,7 +91,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - +
-  - {t: '=', s: +}
+  - '&tdeqlay0'
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - $$mdi:keyboard-space$$
@@ -127,7 +127,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - PG DN
   - {t: '''', s: '"'}
-  - '&tdlay'
+  - '&tdshlay0'
   - FUNCTION
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -140,7 +140,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - HOME
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&tdlay'
+  - '&tdshlay0'
   - '{'
   - {t: '[', s: '{'}
   - (
@@ -176,7 +176,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-down$$
   - RGUI
-  - '&tdlay'
+  - '&tdshlay0'
   - FUNCTION
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -189,7 +189,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   - FUNCTION
-  - '&tdlay'
+  - '&tdshlay0'
   - '&mkp MB4'
   - '&mkp MB5'
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -294,3 +294,12 @@ layers:
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$', type: held}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+combos:
+- p: [1, 2]
+  k: APP
+- p: [23, 25]
+  k: {t: NUMBER, h: toggle}
+- p: [36, 38]
+  k: {t: NAVIGATION, h: toggle}
+- p: [37, 39]
+  k: {t: MOUSE, h: toggle}
