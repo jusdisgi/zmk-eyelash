@@ -299,7 +299,19 @@ combos:
   k: APP
 - p: [23, 25]
   k: {t: NUMBER, h: toggle}
+  l: [QWERTY]
+- p: [23, 25]
+  k: {t: QWERTY, h: toggle}
+  l: [NUMBER]
 - p: [36, 38]
   k: {t: NAVIGATION, h: toggle}
+  l: [QWERTY]
+- p: [36, 38]
+  k: {t: QWERTY, h: toggle}
+  l: [NAVIGATION]
 - p: [37, 39]
   k: {t: MOUSE, h: toggle}
+  l: [QWERTY]
+- p: [37, 39]
+  k: {t: QWERTY, h: toggle}
+  l: [MOUSE]
