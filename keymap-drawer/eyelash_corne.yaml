@@ -4,13 +4,13 @@ layers:
   - $$mdi:keyboard-tab$$
   - Q
   - W
-  - E
-  - R
+  - {t: E, h: Fn}
+  - {t: R, h: SYMBOL}
   - T
   - $$mdi:arrow-up-bold$$
   - Y
-  - U
-  - I
+  - {t: U, h: SYMBOL}
+  - {t: I, h: Fn}
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -103,11 +103,11 @@ layers:
   - '!'
   - '@'
   - '#'
-  - $
+  - {t: $, type: held}
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - ^
-  - '&'
+  - {t: '&', type: held alternate}
   - '*'
   - (
   - )
@@ -145,19 +145,19 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - '&studio_unlock'
   - F1
   - F2
-  - F3
+  - {t: F3, type: held}
   - F4
   - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
   - F7
-  - F8
+  - {t: F8, type: held alternate}
   - F9
   - F10
   - F11
@@ -192,7 +192,7 @@ layers:
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
