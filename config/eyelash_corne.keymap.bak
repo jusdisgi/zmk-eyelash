@@ -103,7 +103,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮                    ╭─────────╮           ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  TAB     |  Q       │  W       │  E       │  R       │  T       │                    | NUB UP  |           │  Y       │  U       │  I       │  O       │  P       │  BSPC    |
-            &kp TAB    &kp Q      &kp W      &lt 2 E    &lt 1 R    &kp T                          &kp UP                 &kp Y      &lt 1 U    &lt 2 I    &kp O      &kp P      &kp BSPC
+            &kp TAB    &kp Q      &kp W      &lt 2 E    &lt 1 R    &kp T                          &kp UP                 &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤           ╭────────┬──────────┬─────────╮├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //│  ESC     │  A       │  S       │  D       │  F       │  G       |           |NUB LEFT|NUB CLICK |NUB RIGHT|│  H       │  J       │  K       │  L       │  ; :     │  ' "     |
             &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G                 &kp LEFT &kp ENTER  &kp RIGHT   &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
@@ -118,24 +118,16 @@
             sensor-bindings = <&deskswap_encoder>;
         };
 
-        num_layer {
+        lower_layer {
             display-name = "NUMBER";
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮                    ╭─────────╮           ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ` ~     |  1       │  2       │  3       │  4       │  5       │                    | NUB UP  |           │  6       │  7       │  8       │  9       │  0       │  - _     |
-           &kp GRAVE   &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                          &kp UP                &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp MINUS
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤           ╭────────┬──────────┬─────────╮├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
-        //│  ESC     │  A       │  S       │  D       │  F       │  G       |           |NUB LEFT|NUB CLICK |NUB RIGHT|│  H       │  4       │  5       │  6       │  ; :     │  ' "     |
-            &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G                 &kp LEFT &kp ENTER  &kp RIGHT   &kp H      &kp N4     &kp N5     &kp N6      &kp SEMI   &kp SQT
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤╭─────────╮         ╭─────────╮           ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
-        //│  SHIFT   │  Z       │  X       │  C       │  V       │  B       || ROLLER  |         |NUB DOWN |           │  N       │  1       │  2       │  3       │  ? /     │  SHIFT   |
-            &td0       &kp Z      &kp X      &kp C      &kp V      &kp B      &kp C_MUTE           &kp DOWN               &kp N      &kp N1     &kp N2     &kp N3     &kp FSLH   &td0
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                                          ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
-        //                                 │  ALT     │KELTICKNOT│ SPACE    |                                          │  ENTER   │  ZERO    │ DOT      │ 
-                                             &kp LALT  &kp LGUI  &kp SPACE                                             &lt 3 ENTER   &kp N0   &kp DOT
+&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
