@@ -157,7 +157,7 @@
         //│ SHIFT+L0 │FUN LAYER │          │          │          │          || ROLLER  |         |NUB DOWN |           │  ALT     │  INSERT  │  DOWN    │  HOME    │          │ SHIFT+L0 |
             &tdlay     &mo 4      &none      &none      &none      &none      &kp C_BRI_AUTO      &kp DOWN               &kp RALT   &kp INS    &kp DOWN   &kp HOME   &none      &tdlay
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                                          ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
-        //                                 │  {       │  [ {     │ (        |                                          │  )       │  ] }     │  }       │ 
+        //                                 │  {       │  [       │ (        |                                          │  )       │  ]       │  }       │ 
                                              &kp LBRC  &kp LBKT   &kp LPAR                                              &kp RPAR    &kp RBKT   &kp RBRC
             >;
 
