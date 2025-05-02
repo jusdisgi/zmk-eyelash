@@ -132,10 +132,10 @@
            &kp GRAVE   &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                          &kp UP                &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤           ╭────────┬──────────┬─────────╮├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //│  ESC     │          │  {       │  }       │  [       │  ]       |           |NUB LEFT|NUB CLICK |NUB RIGHT|│  / ?     │  4 $     │  5 %     │  6 ^     │  - _     │  ' "     |
-            &kp ESC    &none      &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT              &kp LEFT &kp ENTER  &kp RIGHT   &FSLH      &kp N4     &kp N5     &kp N6    &kp MINUS   &kp SQT
+            &kp ESC    &none      &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT              &kp LEFT &kp ENTER  &kp RIGHT   &kp FSLH   &kp N4     &kp N5     &kp N6    &kp MINUS   &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤╭─────────╮         ╭─────────╮           ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //│SHFT+CAPWD│          │          │ SHIFT    │THIS LAYER│          || ROLLER  |         |NUB DOWN |           │  \ |     │  1 !     │  2 @     │  3 #     │  +       │  = +     |
-            &tdcap      &none      &none     &kp LSHIFT  &none      &none      &kp C_MUTE          &kp DOWN               &kp BSLH   &kp N1     &kp N2     &kp N3     &kp PLUS   &kp EQUAL
+            &tdcap     &none      &none     &kp LSHIFT  &none      &none      &kp C_MUTE          &kp DOWN               &kp BSLH   &kp N1     &kp N2     &kp N3     &kp PLUS   &kp EQUAL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                                          ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //                                 │  ALT     │KELTICKNOT│ SPACE    |                                          │  ENTER   │  0       │  DOT      │ 
                                              &kp LALT  &kp LGUI  &kp SPACE                                             &lt 3 ENTER  &kp N0   &kp DOT
