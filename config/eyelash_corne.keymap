@@ -117,9 +117,7 @@
                          &kp LALT  &kp LGUI  &kp SPACE                                                       &lt 3 ENTER   &kp DEL   &kp RGUI
             >;
 
-            // sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-
-            sensor-bindings = <&inc_dec_kp N2 N1>;
+            sensor-bindings = <&deskswap_encoder>;
         };
 
         lower_layer {
