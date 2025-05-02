@@ -40,7 +40,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&to 0>;
         };
-        }
     };
 
     rgb_encoder: rgb_encoder {
