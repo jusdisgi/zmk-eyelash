@@ -269,11 +269,11 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&btht 0 0'
-  - '&btht 1 1'
-  - '&btht 2 2'
-  - '&btht 3 3'
-  - '&btht 4 4'
+  - {t: '&btsel', h: '&btdis'}
+  - {t: '&btsel 1', h: '&btdis 1'}
+  - {t: '&btsel 2', h: '&btdis 2'}
+  - {t: '&btsel 3', h: '&btdis 3'}
+  - {t: '&btsel 4', h: '&btdis 4'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
