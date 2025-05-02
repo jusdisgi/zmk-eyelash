@@ -4,13 +4,13 @@ layers:
   - $$mdi:keyboard-tab$$
   - Q
   - W
-  - E
-  - R
+  - {t: E, h: MOUSE}
+  - {t: R, h: NAVIGATION}
   - T
   - $$mdi:arrow-up-bold$$
   - Y
-  - U
-  - I
+  - {t: U, h: NAVIGATION}
+  - {t: I, h: MOUSE}
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -103,11 +103,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
   - PG UP
-  - HOME
+  - {t: HOME, type: held alternate}
   - $$mdi:arrow-up-bold$$
   - END
   - {t: '0', s: )}
@@ -151,13 +151,13 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - LGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
   - $$mdi:pan-up$$
   - $$mdi:pan-left$$
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$', type: held alternate}
   - $$mdi:pan-right$$
   - $$mdi:pan-up$$
   - RGUI
@@ -193,20 +193,20 @@ layers:
   - '&mkp MB4'
   - '&mkp MB5'
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:mouse-left-click-outline$$', type: held}
+  - {t: '$$mdi:mouse-left-click-outline$$', type: held alternate}
   - $$mdi:mouse-scroll-wheel$$
   - RCLK
   FUNCTION:
   - F1
   - F2
   - F3
-  - F4
-  - {t: F5, h: NAVIGATION}
+  - {t: F4, type: held alternate}
+  - {t: F5, h: NAVIGATION, type: held alternate}
   - F6
   - $$mdi:arrow-up-bold$$
   - F7
-  - F8
-  - F9
+  - {t: F8, type: held alternate}
+  - {t: F9, type: held alternate}
   - F10
   - F11
   - F12
@@ -245,3 +245,52 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: MOUSE, type: held alternate}
   - {t: '0', s: )}
   - {t: ., s: '>'}
+  UTILITY:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&btht 0 0'
+  - '&btht 1 1'
+  - '&btht 2 2'
+  - '&btht 3 3'
+  - '&btht 4 4'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-off$$
+  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$', type: held}
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
