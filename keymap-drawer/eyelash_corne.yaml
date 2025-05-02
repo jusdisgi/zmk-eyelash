@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - '&td0'
+  - $$mdi:apple-keyboard-option$$
   - LGUI
-  - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-caps$$
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - $$mdi:backspace-reverse-outline$$
+  - RGUI
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
@@ -192,7 +192,7 @@ layers:
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
