@@ -203,7 +203,7 @@ layers:
   - {t: F4, type: held alternate}
   - {t: F5, h: NAVIGATION, type: held alternate}
   - F6
-  - $$mdi:arrow-up-bold$$
+  - RGB COLOR HSB(60,100,100)
   - F7
   - {t: F8, type: held alternate}
   - {t: F9, type: held alternate}
@@ -216,9 +216,9 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-right-bold$$
+  - RGB COLOR HSB(128,100,100)
+  - RGB EFF
+  - RGB COLOR HSB(333,100,100)
   - RGB TOG
   - RGB EFF
   - RGB SPD
@@ -231,8 +231,8 @@ layers:
   - {t: X, h: '$$mdi:apple-keyboard-command$$'}
   - {t: C, h: '$$mdi:apple-keyboard-command$$', type: held alternate}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - $$mdi:volume-off$$
-  - $$mdi:arrow-down-bold$$
+  - RGB TOG
+  - RGB COLOR HSB(250,100,100)
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '1', s: '!', type: held alternate}
   - {t: '2', s: '@'}
