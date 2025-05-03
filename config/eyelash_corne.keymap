@@ -239,8 +239,8 @@
         //│SHFT+CAPWD│Z+FUNLAYER│  X       │  C       │V+NUMLAYER│  B       || ROLLER  |         |NUB DOWN |           │  N       │  M       │  , <     │  . >     │  ? /     │SHFT+CAPWD|
             &tdcap     &lt 4 Z    &kp X      &kp C      &lt 1 V    &kp B      &misctrl           &kp DOWN               &kp N      &lt 1 M   &kp COMMA   &kp DOT   &lt 4 FSLH   &tdcap
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                                          ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
-        //                                 │  ALT     │KELTICKNOT│ SPACE    |                                          │  ENTER   │  DELETE  │KELTICKNOT│ 
-                                             &kp LALT   &kp LGUI   &kp SPACE                                            &lt 3 ENTER  &kp DEL   &kp RGUI
+        //                                 │  ALT     │  SPACE   │KELTICKNOT|                                          │  ENTER   │  SPACE   │KELTICKNOT│ 
+                                             &kp LALT   &kp SPACE  &kp LGUI                                           &lt 3 ENTER  &kp SPACE  &kp RGUI
             >;
             sensor-bindings = <&deskswap_encoder>;
         };
