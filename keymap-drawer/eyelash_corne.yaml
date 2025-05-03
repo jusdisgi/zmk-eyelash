@@ -35,7 +35,7 @@ layers:
   - C
   - {t: V, h: NUMBER}
   - B
-  - $$mdi:keyboard-space$$
+  - '&misctrl'
   - $$mdi:arrow-down-bold$$
   - N
   - {t: M, h: NUMBER}
@@ -296,22 +296,24 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [1, 2]
-  k: APP
+  k: '&scrshtc'
+- p: [1, 3]
+  k: '&scrshtf'
 - p: [23, 25]
   k: {t: NUMBER, h: toggle}
-  l: [QWERTY]
+  l: [QWERTY, NAVIGATION, MOUSE]
 - p: [23, 25]
   k: {t: QWERTY, h: toggle}
   l: [NUMBER]
 - p: [36, 38]
   k: {t: NAVIGATION, h: toggle}
-  l: [QWERTY]
+  l: [QWERTY, NUMBER, MOUSE]
 - p: [36, 38]
   k: {t: QWERTY, h: toggle}
   l: [NAVIGATION]
 - p: [37, 39]
   k: {t: MOUSE, h: toggle}
-  l: [QWERTY]
+  l: [QWERTY, NUMBER, NAVIGATION]
 - p: [37, 39]
   k: {t: QWERTY, h: toggle}
   l: [MOUSE]
