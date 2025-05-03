@@ -44,10 +44,10 @@ layers:
   - {t: /, h: FUNCTION, s: '?'}
   - '&tdcap'
   - $$mdi:apple-keyboard-option$$
-  - LGUI
   - $$mdi:keyboard-space$$
+  - LGUI
   - {t: '$$mdi:keyboard-return$$', h: MOUSE}
-  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:keyboard-space$$
   - RGUI
   NUMBER:
   - {t: '`', s: '~'}
