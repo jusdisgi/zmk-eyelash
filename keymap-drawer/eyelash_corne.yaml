@@ -78,7 +78,7 @@ layers:
   - {t: '6', s: ^}
   - {t: '-', s: _}
   - {t: '''', s: '"'}
-  - '&tdshlay0'
+  - '&tdshto0'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
@@ -91,7 +91,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - +
-  - '&tdeqlay0'
+  - '&tdeqto0'
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - $$mdi:keyboard-space$$
@@ -127,7 +127,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - PG DN
   - {t: '''', s: '"'}
-  - '&tdshlay0'
+  - '&tdshto0'
   - FUNCTION
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -140,7 +140,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - HOME
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&tdshlay0'
+  - '&tdshto0'
   - '{'
   - {t: '[', s: '{'}
   - (
@@ -176,7 +176,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-down$$
   - RGUI
-  - '&tdshlay0'
+  - '&tdshto0'
   - FUNCTION
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -189,13 +189,13 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   - FUNCTION
-  - '&tdshlay0'
+  - '&tdshto0'
   - '&mkp MB4'
   - '&mkp MB5'
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:mouse-left-click-outline$$', type: held alternate}
-  - $$mdi:mouse-scroll-wheel$$
-  - RCLK
+  - {t: '&mkp MB1', type: held alternate}
+  - '&mkp MB3'
+  - '&mkp MB2'
   FUNCTION:
   - F1
   - F2
