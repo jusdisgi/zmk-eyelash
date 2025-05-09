@@ -32,23 +32,23 @@ layers:
   - '&tdcap'
   - {t: Z, h: FUNCTION}
   - X
-  - C
-  - {t: V, h: NUMBER}
-  - B
+  - $$mdi:volume-off$$
+  - {t: C, h: NUMBER}
+  - V
   - '&misctrl'
   - $$mdi:arrow-down-bold$$
+  - B
   - N
   - {t: M, h: NUMBER}
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, h: FUNCTION, s: '?'}
-  - '&tdcap'
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - LGUI
   - {t: '$$mdi:keyboard-return$$', h: MOUSE}
   - $$mdi:keyboard-space$$
-  - RGUI
+  - $$mdi:backspace-reverse-outline$$
   NUMBER:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
@@ -87,8 +87,8 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
   - {t: \, s: '|'}
-  - {t: '1', s: '!', type: held alternate}
-  - {t: '2', s: '@'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@', type: held alternate}
   - {t: '3', s: '#'}
   - +
   - '&tdeqto0'
@@ -185,8 +185,8 @@ layers:
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:apple-keyboard-control$$
-  - {t: RGUI, type: held alternate}
-  - $$mdi:apple-keyboard-shift$$
+  - RGUI
+  - {t: '$$mdi:apple-keyboard-shift$$', type: held alternate}
   - $$mdi:apple-keyboard-option$$
   - FUNCTION
   - '&tdshto0'
@@ -234,11 +234,11 @@ layers:
   - RGB TOG
   - RGB COLOR HSB(250,100,100)
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '1', s: '!', type: held alternate}
-  - {t: '2', s: '@'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@', type: held alternate}
   - {t: '3', s: '#'}
   - {t: +, type: held alternate}
-  - RGB COLOR HSB(333,50,100)
+  - {t: 'RGB COLOR HSB(333,50,100)', type: held alternate}
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - $$mdi:keyboard-space$$
@@ -283,11 +283,11 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:bluetooth-off$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
