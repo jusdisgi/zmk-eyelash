@@ -236,8 +236,8 @@
         //│  ESC     │  A       │  S       │  D       │  F       │  G       |           |NUB LEFT|NUB CLICK |NUB RIGHT|│  H       │  J       │  K       │  L       │  ; :     │  ' "     |            
             &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G                 &kp LEFT &kp ENTER  &kp RIGHT   &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤╭─────────╮         ╭─────────╮           ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
-        //│SHFT+CAPWD│Z+FUNLAYER│  X       │  MUTE    │C+NUMLAYER│  V       || ROLLER  |         |NUB DOWN |           │  B       │  N       │  M       │  , <     │  . >     │  / ?     |
-            &tdcap     &lt 4 Z    &kp X     &kp C_MUTE  &lt 1 C    &kp V       &misctrl           &kp DOWN               &kp B      &kp N      &lt 1 M     &kp COMMA  &kp DOT   &lt 4 FSLH
+        //│SHFT+CAPWD│Z+FUNLAYER│  X       │   C      │C+NUMLAYER│  MUTE    || ROLLER  |         |NUB DOWN |           │  B       │  N       │  M       │  , <     │  . >     │  / ?     |
+            &tdcap     &lt 4 Z    &kp X      &kp C      &lt 1 V   &kp C_MUTE   &misctrl           &kp DOWN               &kp B      &kp N      &lt 1 M     &kp COMMA  &kp DOT   &lt 4 FSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                                          ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //                                 │  ALT     │  SPACE   │KELTICKNOT|                                          │  ENTER   │  SPACE   │  DELETE  │ 
                                              &kp LALT   &kp SPACE  &kp LGUI                                           &lt 3 ENTER  &kp SPACE  &kp DEL
