@@ -32,9 +32,9 @@ layers:
   - '&tdcap'
   - {t: Z, h: FUNCTION}
   - X
+  - C
+  - {t: V, h: NUMBER}
   - $$mdi:volume-off$$
-  - {t: C, h: NUMBER}
-  - V
   - '&misctrl'
   - $$mdi:arrow-down-bold$$
   - B
